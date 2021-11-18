@@ -1,32 +1,30 @@
-.header{
-    background: red;
-    width: 100%;
-    position: fixed;
+* {
+    margin: 0;
 }
 
-.toolbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    padding: 0 24px;
+@media(max-width: 1200px){
+    section{
+        width: 1000px;
+        background-color: red;
+    }
 }
 
-.main{
-    height: 100vh;
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+@media(max-width: 1024px){
+    section{
+        width: 700px;
+        background-color: royalblue;
+    }
 }
 
-.navbar{
-    width: 350px;
-    background: blue;
-    padding: 24px;
+@media(max-width: 768px){
+    section{
+        width: 400px;
+    }
 }
 
-.feed{
-    background: yellow;
-    width: 100%;
-    padding: 24px;
+@media(max-width: 425px){
+    section{
+        width: 320px;
+    }
 }
+

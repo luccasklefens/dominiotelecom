@@ -1,11 +1,11 @@
 import React from 'react';
-// import './style.css'
+import './style.css'
 import { makeStyles } from '@material-ui/styles';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 import Header from './components/header';
-import Feed from './components/feed';
+import Tabelas from './components/tabelas';
 import Navbar from './components/navbar';
 
 const useStyles = makeStyles({
@@ -20,6 +20,7 @@ const useStyles = makeStyles({
     toolbar: {
         minHeight: 64,
     }
+    
 });
 
 function Home(){
@@ -31,11 +32,11 @@ function Home(){
             <div className={classes.toolbar}></div>
             <main className={classes.main}>
                 <Container maxWidth="lg">
-                    <Box>
+                    <Box display="flex">
                         <Navbar />
+                        <Tabelas />
                     </Box>
                 </Container>
-                <Feed />
             </main>
         </div>
     )
